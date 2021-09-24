@@ -1,0 +1,23 @@
+a{
+    text-decoration: none;
+}
+.reports .row {
+    background: #333;
+    align-items: center;
+    text-align: center;
+    border: 5px solid red;
+}
+
+.reports .row:hover{
+    background: aliceblue;
+    border: 5px solid #333;
+}
+
+.reports .row:hover p{
+    color: red;
+}
+
+.reports .row p{
+    color: aliceblue;
+    margin-top: 10px;
+}
