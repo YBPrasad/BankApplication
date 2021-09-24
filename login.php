@@ -5,7 +5,7 @@
  center;background-image: url('assets/images/image02.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;position: relative; ">
     <div class="wrapper">
         <section class="form login">
-          <header><i class="material-icons" style="font-size:36px"></i>Login</header>
+          <header><i class="material-icons" style="font-size:36px"></i>Login Dashboard</header>
           <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
             <div class="error-text"></div>
             <div class="field input">
