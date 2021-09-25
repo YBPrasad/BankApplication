@@ -36,7 +36,7 @@
         <p>View Terminal ID</p>
     </a><a href="editterminal.php" class="box b3">
         <p>Edit Terminal ID</p>
-    </a><a href="" class="box b4">
+    </a><a href="deleteterminal.php" class="box b4">
         <p>Delete Terminal ID</p>
     </a><a href="viewreports.php" class="box b5">
         <p>View Reports</p>
