@@ -57,7 +57,7 @@
                 else{
                     ?>
                     
-                    <table class="table table-striped" style="margin-top:20px" id="table-id">
+                    <table class="table table-striped" style="margin-top:20px" id="tableData">
                                 <thead  style="color:blue">
                                     <tr>
                                         <th>Termi: Id</th>
@@ -138,7 +138,7 @@
 
     <script>
         function ExportToExcel(type, fn, dl) {
-       var elt = document.getElementById('table-id');
+       var elt = document.getElementById('tableData');
        var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
        const d = new Date();
        return dl ?
@@ -149,6 +149,15 @@
     
     </script>
     
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="paging.js"></script> 
+<script type="text/javascript">
+            $(document).ready(function() {
+                $('#tableData').paging({limit:25});
+            });
+        </script>
     
 </body>
 </html>
