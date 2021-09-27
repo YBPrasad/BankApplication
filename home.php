@@ -26,7 +26,7 @@ include("header.php");
         <br>
         <div class="row">
             <div class="col-md-3" style="text-align:center;">
-                <div class="card c1">
+                <div class="card c1 animate__animated animate__flipInX">
                     <p>Yesterday Created Terminal</p>
                     <div class="no">
                         <?php
@@ -46,7 +46,7 @@ include("header.php");
             </div>
 
             <div class="col-md-3" style="text-align:center;">
-                <div class="card c2">
+                <div class="card c2 animate__animated animate__flipInX">
                     <p>Today Created Terminal</p>
                     <div class="no">
                         <?php
@@ -61,14 +61,14 @@ include("header.php");
                 </div>
             </div>
             <div class="col-md-3" style="text-align:center;">
-                <div class="card c3">
+                <div class="card c3 animate__animated animate__flipInX">
 
                     <div class="no">
                     </div>
                 </div>
             </div>
             <div class="col-md-3" style="text-align:center;">
-                <div class="card c4">
+                <div class="card c4 animate__animated  animate__flipInX">
 
                     <div class="no">
                     </div>

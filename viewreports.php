@@ -8,7 +8,7 @@
 
 <body style="align-items: center; ">
 
-    <div class="row">
+    <div class="row animate__animated animate__zoomIn">
         <!-- <div class="col-md-2"></div> -->
         <div class="reports">
             <a href="dailyterminalreports.php">
