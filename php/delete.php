@@ -16,7 +16,6 @@
         header("location:../deleteterminal.php") ;   
     }
 
-
 ?>
 
 
