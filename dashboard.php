@@ -25,12 +25,12 @@ include("header.php");
 
             <section class="review" id="review">
 
-                <h1 class="heading" style="text-align:center;margin-top:50px"> POS Terminal <span style="color:blue">Inventory</span> </h1>
+                <h1 class="heading animate__animated animate__slideInDown" style="text-align:center;margin-top:50px"> POS Terminal <span style="color:blue">Inventory</span> </h1>
 
                 <div class="box-container">
 
                     <a href="createterminal.php" class="box b1">
-                        <p>Create Terminal ID</p>
+                        <p class="">Create Terminal ID</p>
                     </a>
                     <a href="viewterminal.php" class="box b2">
                         <p>View Terminal ID</p>

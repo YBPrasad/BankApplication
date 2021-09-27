@@ -1,10 +1,10 @@
 <div class="row">
     <div class="col-md-1"></div>
-    <div class="col-md-10 create" style="border:1px solid red">
+    <div class="col-md-10 create animate__animated animate__fadeIn" style="border:1px solid red">
         <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off" style="padding:5px">
             <div class="error-text" style="color:red;text-align:center"></div>
             <div class="row" style="margin:5px 0">
-                <div class="col-md-4">
+                <div class="col-md-4 ">
                     <label>Terminal ID</label>
                 </div>
                 <div class="col-md-8">

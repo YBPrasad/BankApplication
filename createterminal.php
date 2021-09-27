@@ -20,7 +20,7 @@ include("header.php");
             </div>
         </div>
         <div class="row">
-            <h1 class="heading" style="text-align:center"> Terminal Creation<span style="color:blue"> Form</span> </h1>
+            <h1 class="heading animate__animated animate__slideInDown" style="text-align:center"> Terminal Creation<span style="color:blue"> Form</span> </h1>
         </div>
 
         <?php

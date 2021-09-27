@@ -153,7 +153,7 @@ include("header.php");
     <script type="text/javascript">
         $(document).ready(function() {
             $('#tableData').paging({
-                limit: 25
+                limit: 2
             });
         });
     </script>

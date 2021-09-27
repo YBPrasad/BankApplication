@@ -45,5 +45,3 @@
         
             echo "All inputs fields are required";
     }
-
-?>
