@@ -215,3 +215,20 @@ body{
   background: #187ed5;
   font-weight: bold;
 }
+
+.dashboard{
+  background-image: url('../assets/images/image03.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+}
+
+.createform form label{
+  color: whitesmoke;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.dashboard .header{
+  background-color:0 0 3px #FF0000, 0 0 5px #0000FF;
+}

@@ -6,7 +6,7 @@ if (!isset($_SESSION['username'])) {
 include("header.php");
 ?>
 
-<body style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); ">
+<body class="dashboard">
     <div class="container-fluid">
         <div class="row" style="margin-top:5px">
             <div class="col-md-10">
