@@ -26,9 +26,9 @@
         }
         else{
             $currentDate=date('Y-m-d');
-            $sql2 = mysqli_query($conn, "INSERT INTO terminal (terminal_id,vender,model,type,sno,mcc,merchantno,nfc,lname,cname,address,city,district,date)
+            $sql2 = mysqli_query($conn, "INSERT INTO terminal (terminal_id,vender,model,type,sno,mcc,merchantno,nfc,lname,cname,address,city,district,date,status)
             VALUES ('{$terminalid}', '{$vender}','{$model}','{$type}','{$serialno}','{$mcc}','{$merchantno}',
-            '{$nfc}','{$lname}','{$cname}','{$address}','{$city}','{$district}','{$currentDate}')");
+            '{$nfc}','{$lname}','{$cname}','{$address}','{$city}','{$district}','{$currentDate}',0)");
 
             if($sql2){
                 echo "success";
