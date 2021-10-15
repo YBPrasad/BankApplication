@@ -6,7 +6,7 @@ if (!isset($_SESSION['username'])) {
 include("header.php");
 ?>
 
-<body style="align-items: center; ">
+<body style="align-items: center; " class="dashboard">
     <!-- review section starts  -->
 
     <div class="container">
@@ -25,7 +25,7 @@ include("header.php");
 
             <section class="review" id="review">
 
-                <h1 class="heading animate__animated animate__slideInDown" style="text-align:center;margin-top:50px"> POS Terminal <span style="color:blue">Inventory</span> </h1>
+                <h1 class="heading animate__animated animate__slideInDown" style="text-align:center;margin-top:50px;text-shadow: 0 0 3px #FF0, 0 0 5px #0000FF"> POS Terminal <span style="color:whitesmoke">Inventory</span> </h1>
 
                 <div class="box-container">
 

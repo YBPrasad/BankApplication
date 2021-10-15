@@ -6,9 +6,9 @@ if (!isset($_SESSION['username'])) {
 include("header.php");
 ?>
 
-<body style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);align-items: center; ">
+<body class="dashboard">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row header">
 
             <div class="col-md-10">
                 <p><i class="fas fa-user" style="margin-right:5px"></i><?php echo $_SESSION['username'] ?></p>
@@ -20,7 +20,7 @@ include("header.php");
             </div>
         </div>
         <div class="row">
-            <h1 class="heading animate__animated animate__slideInDown" style="text-align:center"> Terminal Creation<span style="color:blue"> Form</span> </h1>
+            <h1 class="heading animate__animated animate__slideInDown" style="text-align:center;text-shadow: 0 0 3px #FF0, 0 0 5px #0000FF;"> Terminal Creation<span style="color:whitesmoke"> Form</span> </h1>
         </div>
 
         <?php

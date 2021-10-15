@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row createform">
     <div class="col-md-1"></div>
     <div class="col-md-10 create animate__animated animate__fadeIn" style="border:1px solid red">
         <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off" style="padding:5px">
