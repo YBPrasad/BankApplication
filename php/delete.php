@@ -10,7 +10,7 @@
     $data1 = $_GET['tid'];
     // echo $data1;
 
-    $sql="delete from terminal where terminal_id='{$data1}' ";
+    $sql="update terminal set status=1 where terminal_id='{$data1}' ";
 
     if(mysqli_query($conn,$sql)){
         header("location:../deleteterminal.php") ;   
