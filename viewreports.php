@@ -6,7 +6,7 @@
     include("header.php");
 ?>
 
-<body style="align-items: center; ">
+<body style="align-items: center; "  class="dashboard">
 
     <div class="row animate__animated animate__zoomIn">
         <!-- <div class="col-md-2"></div> -->

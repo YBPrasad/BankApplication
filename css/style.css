@@ -232,3 +232,7 @@ body{
 .dashboard .header{
   background-color:0 0 3px #FF0000, 0 0 5px #0000FF;
 }
+
+.dashboard .field label{
+  color: #e6e6e6;
+}

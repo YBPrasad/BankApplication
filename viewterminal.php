@@ -6,7 +6,7 @@
     include("header.php");
 ?>
 
-<body style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);">
+<body  class="dashboard">
 
     <div class="container-fluid view">
     <div class="row" style="margin-top:5px">
@@ -19,7 +19,8 @@
             </div>
         </div>
         <div class="row">
-            <h1 class="heading" style="text-align:center"> Search Terminal<span style="color:blue"> ID</span> </h1>
+  
+            <h1 class="heading" style="text-align:center;text-shadow: 0 0 3px #FF0, 0 0 5px #0000FF;"> Search Terminal<span style="color:whitesmoke"> ID</span> </h1>
         </div>
         <br><br>
         <div class="row" style="margin-top:-50px">
@@ -63,36 +64,36 @@
                                 <div class="row" style="margin-top:25px">
                                     <div class="col-md-6">
                                         <div class="row">
-                                            <div class="col-md-5" style="font-weight:bold;color:blue">Terminal ID</div>
+                                            <div class="col-md-5" style="font-weight:bold;">Terminal ID</div>
                                             <div class="col-md-7"><?php echo $row['terminal_id']?></div>
                                         </div>
 
                                         <div class="row">
-                                            <div class="col-md-5" style="font-weight:bold;color:blue">Vender</div>
+                                            <div class="col-md-5" style="font-weight:bold;">Vender</div>
                                             <div class="col-md-7"><?php echo $row['vender']?></div>
                                         </div>
 
                                         <div class="row">
-                                            <div class="col-md-5" style="font-weight:bold;color:blue">Model</div>
+                                            <div class="col-md-5" style="font-weight:bold;">Model</div>
                                             <div class="col-md-7"><?php echo $row['model']?></div>
                                         </div>
 
                                     <div class="row">
-                                        <div class="col-md-5" style="font-weight:bold;color:blue">Type</div>
+                                        <div class="col-md-5" style="font-weight:bold;">Type</div>
                                         <div class="col-md-7"><?php echo $row['type']?></div>
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-5" style="font-weight:bold;color:blue">Serial No</div>
+                                        <div class="col-md-5" style="font-weight:bold;">Serial No</div>
                                         <div class="col-md-7"><?php echo $row['sno']?></div>
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-5" style="font-weight:bold;color:blue">MCC</div>
+                                        <div class="col-md-5" style="font-weight:bold;">MCC</div>
                                         <div class="col-md-7"><?php echo $row['mcc']?></div>
                                     </div>
                                     <div class="row">
-                                                <div class="col-md-5" style="font-weight:bold;color:blue">Merchant No</div>
+                                                <div class="col-md-5" style="font-weight:bold;">Merchant No</div>
                                                 <div class="col-md-7"><?php echo $row['merchantno']?></div>
                                                 </div>
 
@@ -101,38 +102,38 @@
 
                                         <div class="col-md-6">
                                         <div class="row">
-                                                <div class="col-md-5" style="font-weight:bold;color:blue">NFC Available</div>
+                                                <div class="col-md-5" style="font-weight:bold;">NFC Available</div>
                                                 <div class="col-md-7"><?php echo $row['nfc']?></div>
                                             </div>
 
                                             <div class="row">
-                                                <div class="col-md-5" style="font-weight:bold;color:blue">Legal Name</div>
+                                                <div class="col-md-5" style="font-weight:bold;">Legal Name</div>
                                                 <div class="col-md-7"><?php echo $row['lname']?></div>
                                             </div>
 
                                             <div class="row">
                                                 
-                                                <div class="col-md-5" style="font-weight:bold;color:blue">Com: Name</div>
+                                                <div class="col-md-5" style="font-weight:bold;">Com: Name</div>
                                                 <div class="col-md-7"><?php echo $row['cname']?></div>
                                             </div>
 
                                     <div class="row">
-                                        <div class="col-md-5" style="font-weight:bold;color:blue">Address</div>
+                                        <div class="col-md-5" style="font-weight:bold;">Address</div>
                                         <div class="col-md-7"><?php echo $row['address']?></div>
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-5" style="font-weight:bold;color:blue">City</div>
+                                        <div class="col-md-5" style="font-weight:bold;">City</div>
                                         <div class="col-md-7"><?php echo $row['city']?></div>
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-5" style="font-weight:bold;color:blue">District</div>
+                                        <div class="col-md-5" style="font-weight:bold;">District</div>
                                         <div class="col-md-7"><?php echo $row['district']?></div>
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-5" style="font-weight:bold;color:blue">Date</div>
+                                        <div class="col-md-5" style="font-weight:bold;">Date</div>
                                         <div class="col-md-7"><?php echo $row['date']?></div>
                                     </div>
                                         </div>
