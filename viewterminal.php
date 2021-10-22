@@ -137,12 +137,7 @@
                                         <div class="col-md-7"><?php echo $row['date']?></div>
                                     </div>
                                         </div>
-                                    </div>
-
-
-
-
-                                
+                                    </div>             
                                     
                                 <?php
                             }
