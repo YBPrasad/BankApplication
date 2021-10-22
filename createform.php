@@ -13,7 +13,7 @@
             </div>
 
             <div class="row" style="margin:5px 0">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="row">
                         <div class="col-md-4">
                             <label for="">Vender</label>
@@ -34,7 +34,7 @@
 
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="row">
                         <div class="col-md-4">
                             <label for="">Model</label>
@@ -51,7 +51,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="row">
                         <div class="col-md-4">
                             <label for="">Type</label>
@@ -62,6 +62,22 @@
                                 <option value="gprs">GPRS</option>
                                 <option value="pstn">PSTN</option>
                                 <option value="ip">IP</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <label for="">CUP Avialability</label>
+                        </div>
+                        <div class="col-md-4">
+                            <select name="cup" id="cup">
+                                <option value=""></option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                
                             </select>
                         </div>
                     </div>
