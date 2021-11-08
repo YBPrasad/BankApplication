@@ -6,7 +6,7 @@
     include("header.php");
 ?>
 
-<body  class="dashboard">
+<body class="dashboard">
 
     <div class="container-fluid view">
     <div class="row" style="margin-top:5px">
