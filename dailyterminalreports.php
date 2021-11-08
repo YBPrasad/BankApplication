@@ -56,7 +56,7 @@ include("header.php");
                 } else {
                 ?>
 
-                    <table class="table table-striped" style="margin-top:20px" id="tableData">
+                    <table class="table" style="margin-top:20px" id="tableData">
                         <thead style="color:blue">
                             <tr>
                                 <th>Termi: Id</th>
@@ -74,7 +74,7 @@ include("header.php");
                                 <th>District</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody style="color:whitesmoke">
 
                             <?php
                             while ($row = mysqli_fetch_assoc($sql)) {
@@ -158,7 +158,7 @@ include("header.php");
     <script type="text/javascript">
         $(document).ready(function() {
             $('#tableData').paging({
-                limit: 25
+                limit: 3
             });
         });
     </script>

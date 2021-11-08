@@ -27,12 +27,12 @@ include("header.php");
                 <form action="" method="GET" enctype="multipart/form-data" autocomplete="off">
 
                     <div class="field input" style="text-align:center">
-                        <label>Terminal ID</label>
+                        <label style="color: whitesmoke;text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">Terminal ID</label>
                         <input type="text" class="form-control" name="searchTxt" placeholder="Enter terminal id here" required>
 
                     </div>
                     <div class="field button" style="text-align:center;margin-top:10px">
-                        <input type="submit" class="btn btn-outline-success" name="submit" value="Search">
+                        <input type="submit" class="btn btn-success" name="submit" value="Search">
                     </div>
                 </form>
             </div>
@@ -75,20 +75,19 @@ include("header.php");
                                 </div>
 
                                 <div class="row" style="margin:2px 0">
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <label for="">Vender</label>
                                             </div>
                                             <div class="col-md-8">
                                                 <select name="vender" id="vender" onchange="update()">
-                                                    <option value=""><?php echo $row['vender']; ?></option>
-                                                    <option value="epic">EPIC Lanka</option>
-                                                    <option value="sits">SITS</option>
-                                                    <option value="cba">CBA</option>
-                                                    <option value="dms">DMS</option>
-                                                    <option value="inter">Interblocks</option>
-                                                    <option value="other">Other</option>
+                                                    <option <?php if($row['vender'] == 'epic'){echo("selected");}?> value="epic">EPIC Lanka</option>
+                                                    <option <?php if($row['vender'] == 'sits'){echo("selected");}?> value="sits">SITS</option>
+                                                    <option <?php if($row['vender'] == 'cba'){echo("selected");}?> value="cba">CBA</option>
+                                                    <option <?php if($row['vender'] == 'dms'){echo("selected");}?> value="dms">DMS</option>
+                                                    <option <?php if($row['vender'] == 'inter'){echo("selected");}?> value="inter">Interblocks</option>
+                                                    <option <?php if($row['vender'] == 'other'){echo("selected");}?> value="other">Other</option>
 
                                                 </select>
                                             </div>
@@ -96,34 +95,49 @@ include("header.php");
 
                                     </div>
 
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <label for="">Model</label>
                                             </div>
                                             <div class="col-md-8">
                                                 <select name="model" id="model">
-                                                    <option value=""></option>
-                                                    <option value="vx510" id="epic1">VX 510</option>
-                                                    <option value="vx520" id="epic2">VX 520</option>
-                                                    <option value="vx520c" id="epic3">VX 520C</option>
-                                                    <option value="t1000" id="csits">T1000</option>
+                                                    <option <?php if($row['model'] == 'vx510'){echo("selected");}?> value="vx510" id="epic1">VX 510</option>
+                                                    <option <?php if($row['model'] == 'vx520'){echo("selected");}?> value="vx520" id="epic2">VX 520</option>
+                                                    <option <?php if($row['model'] == 'vx520c'){echo("selected");}?> value="vx520c" id="epic3">VX 520C</option>
+                                                    <option <?php if($row['model'] == 't1000'){echo("selected");}?> value="t1000" id="csits">T1000</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <label for="">Type</label>
                                             </div>
                                             <div class="col-md-8">
                                                 <select name="type" id="type">
-                                                    <option value=""></option>
-                                                    <option value="gprs">GPRS</option>
-                                                    <option value="pstn">PSTN</option>
-                                                    <option value="ip">IP</option>
+                                                    
+                                                    <option <?php if($row['type'] == 'gprs'){echo("selected");}?> value="gprs">GPRS</option>
+                                                    <option <?php if($row['type'] == 'pstn'){echo("selected");}?> value="pstn">PSTN</option>
+                                                    <option <?php if($row['type'] == 'ip'){echo("selected");}?> value="ip">IP</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <label for="">CUP Avialability</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select name="cup" id="cup">
+                                                    
+                                                    <option <?php if($row['cup'] == 'yes'){echo("selected");}?> value="yes">Yes</option>
+                                                    <option <?php if($row['cup'] == 'no'){echo("selected");}?> value="no">No</option>
+                                
                                                 </select>
                                             </div>
                                         </div>
@@ -164,9 +178,9 @@ include("header.php");
                                     </div>
                                     <div class="col-md-8">
                                         <select name="nfc" id="nfc" value="<?php echo $row['nfc']; ?>">
-                                            <option value=""></option>
-                                            <option value="yes">Yes</option>
-                                            <option value="no">No</option>
+                                            
+                                            <option <?php if($row['nfc'] == 'yes'){echo("selected");}?> value="yes">Yes</option>
+                                            <option <?php if($row['nfc'] == 'no'){echo("selected");}?> value="no">No</option>
                                         </select>
                                     </div>
                                 </div>
@@ -213,9 +227,9 @@ include("header.php");
                                     </div>
                                     <div class="col-md-8">
                                         <select name="district" id="district">
-                                            <option value=""></option>
-                                            <option value="ampara">Ampara</option>
-                                            <option value="anuradhapura">Anuradhapura</option>
+                                            
+                                            <option <?php if($row['district'] == 'ampara'){echo("selected");}?> value="ampara">Ampara</option>
+                                            <option <?php if($row['district'] == 'anuradhapura'){echo("selected");}?> value="anuradhapura">Anuradhapura</option>
                                         </select>
                                     </div>
                                 </div>

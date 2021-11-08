@@ -55,7 +55,7 @@ include("header.php");
                 } else {
                 ?>
 
-                    <table class="table table-striped" style="margin-top:20px" id="tableData">
+                    <table class="table" style="margin-top:20px" id="tableData">
                         <thead style="color:blue">
                             <tr>
                                 <th>Terminal Id</th>
@@ -73,7 +73,7 @@ include("header.php");
                                 <th>District</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody style="color:whitesmoke">
 
                             <?php
                             while ($row = mysqli_fetch_assoc($sql)) {
