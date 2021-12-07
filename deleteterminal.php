@@ -19,7 +19,7 @@ include("header.php");
             </div>
         </div>
         <div class="row">
-            <h1 class="heading" style="text-align:center"> Delete Terminal<span style="color:blue"> ID</span> </h1>
+            <h1 class="heading" style="text-align:center;text-shadow: 0 0 3px #FF0, 0 0 5px #0000FF;"> Delete Terminal<span style="color:whitesmoke"> ID</span> </h1>
         </div>
         <br><br>
         <div class="row" style="margin-top:-50px">
@@ -46,7 +46,7 @@ include("header.php");
                 if (isset($_GET['searchTxt'])) {
                     $search = $_GET['searchTxt'];
 
-                    $sql = mysqli_query($conn, "select * from terminal where terminal_id = '{$search}'");
+                    $sql = mysqli_query($conn, "select * from terminal where terminal_id = '{$search}' and status=0");
 
                     if (mysqli_num_rows($sql) < 1) {
                         $error = "Error terminal id";
@@ -59,7 +59,7 @@ include("header.php");
                         while ($row = mysqli_fetch_assoc($sql)) {
                         ?>
 
-                            <div class="row" style="margin-top:25px">
+                            <div class="row" style="margin-top:25px;background-color: hsla(120, 60%, 70%, 0.3);">
                                 <div class="col-md-6">
                                     <div class="row">
                                         <div class="col-md-5" style="font-weight:bold;color:blue">Terminal ID</div>
@@ -159,6 +159,23 @@ include("header.php");
 
         </div>
     </div>
+
+    <script>
+        function ExportToExcel(type, fn, dl) {
+            var elt = document.getElementById('tableData');
+            var wb = XLSX.utils.table_to_book(elt, {
+                sheet: "sheet1"
+            });
+            const d = new Date();
+            return dl ?
+                XLSX.write(wb, {
+                    bookType: type,
+                    bookSST: true,
+                    type: 'base64'
+                }) :
+                XLSX.writeFile(wb, fn || (d + '.' + (type || 'xlsx')));
+        }
+    </script>
 
     <script>
         function confirmDelete() {

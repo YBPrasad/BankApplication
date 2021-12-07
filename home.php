@@ -14,7 +14,7 @@ include("header.php");
         <div class="row">
 
             <div class="col-md-10">
-                <p style="color:whitesmoke"><i class="fas fa-user" style="margin-right:5px;"></i><?php echo $_SESSION['username'] ?></p>
+            <p style="color:blanchedalmond"><i class="fas fa-user" style="margin-right:5px;"></i><?php echo $_SESSION['username'] ?></p>
             </div>
 
             <div class="col-md-2">
@@ -22,7 +22,7 @@ include("header.php");
                 <a href="logout.php" style="color:red;margin-left:5px">Logout</a>
             </div>
         </div>
-        <h1 class="heading" style="text-align:center;padding:10px 0;text-shadow: 0 0 3px #FF0, 0 0 5px #0000FF;""> Bank <span style="color:whitesmoke">DASHBOARD</span> </h1>
+        <h1 class="heading" style="text-align:center;padding:10px 0;text-shadow: 0 0 3px #FF0, 0 0 5px #0000FF;"><span style="color:whitesmoke">DASHBOARD</span> </h1>
         <br>
 
         <ul>
@@ -33,7 +33,7 @@ include("header.php");
                         <?php
                         include("php/config.php");
                         $yesterday = date("Y-m-d", mktime(0, 0, 0, date("m"), date("d") - 1, date("Y")));
-                        $sql = mysqli_query($conn, "select * from terminal where date='{$yesterday}';");
+                        $sql = mysqli_query($conn, "select * from terminal where date='{$yesterday}'  and status=0;;");
                         ?>
                         <p style="font-size:50px"><?php echo mysqli_num_rows($sql) ?></p>
                         <?php
@@ -53,7 +53,7 @@ include("header.php");
                         <?php
                         include("php/config.php");
                         $today = date("Y-m-d", mktime(0, 0, 0, date("m"), date("d"), date("Y")));
-                        $sql = mysqli_query($conn, "select * from terminal where date='{$today}';");
+                        $sql = mysqli_query($conn, "select * from terminal where date='{$today}'  and status=0;;");
                         ?>
                         <p style="font-size:50px"><?php echo mysqli_num_rows($sql) ?></p>
                         <?php
@@ -68,7 +68,7 @@ include("header.php");
                         <?php
                             include("php/config.php");
                             
-                            $sql=mysqli_query($conn,"select * from terminal where cup='yes';");
+                            $sql=mysqli_query($conn,"select * from terminal where cup='yes'  and status=0;;");
                         ?>
                         <p style="font-size:50px"><?php echo mysqli_num_rows($sql) ?></p>
                     </div>
@@ -81,7 +81,7 @@ include("header.php");
                     <?php
                             include("php/config.php");
                             
-                            $sql=mysqli_query($conn,"select * from terminal where nfc='yes';");
+                            $sql=mysqli_query($conn,"select * from terminal where nfc='yes' and status=0;");
                         ?>
                         <p style="font-size:50px"><?php echo mysqli_num_rows($sql) ?></p>
                     </div>
@@ -94,10 +94,10 @@ include("header.php");
                     <div class="no">
                         <?php
                             include("php/config.php");
-                            $sql1=mysqli_query($conn,"select * from terminal where vender='epic';");
-                            $sql2=mysqli_query($conn,"select * from terminal where vender='sits';");
-                            $sql3=mysqli_query($conn,"select * from terminal where vender='cba';");
-                            $sql4=mysqli_query($conn,"select * from terminal where vender='inter';");
+                            $sql1=mysqli_query($conn,"select * from terminal where vender='epic' and status=0;");
+                            $sql2=mysqli_query($conn,"select * from terminal where vender='sits' and status=0;");
+                            $sql3=mysqli_query($conn,"select * from terminal where vender='cba' and status=0;");
+                            $sql4=mysqli_query($conn,"select * from terminal where vender='inter' and status=0;");
 
 
                         ?>
@@ -113,14 +113,14 @@ include("header.php");
 
 </ul>
         <br>
-        <div class="row bottom-img">
+        <!-- <div class="row bottom-img">
             <div class="col-md-2"></div>
             <div class="col-md-8">
 
             </div>
             <div class="col-md-2"></div>
 
-        </div>
+        </div> -->
     </div>
 
 </body>

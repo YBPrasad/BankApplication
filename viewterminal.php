@@ -47,7 +47,7 @@
                     if(isset($_GET['searchTxt'])){
                         $search=$_GET['searchTxt'];
                         
-                        $sql=mysqli_query($conn,"select * from terminal where terminal_id = '{$search}'");
+                        $sql=mysqli_query($conn,"select * from terminal where terminal_id = '{$search}' and status=0");
 
                         if(mysqli_num_rows($sql)<1){
                             $error="Error terminal id";

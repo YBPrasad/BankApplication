@@ -18,7 +18,7 @@ include("header.php");
             </div>
         </div>
         <div class="row">
-            <h1 class="heading" style="text-align:center"> Edit <span style="color:blue"> Terminal</span> </h1>
+            <h1 class="heading" style="text-align:center;text-shadow: 0 0 3px #FF0, 0 0 5px #0000FF;"> Edit <span style="color:whitesmoke"> Terminal</span> </h1>
         </div>
         <br>
         <div class="row">

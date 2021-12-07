@@ -15,7 +15,7 @@
 </div>
 
 <div class="col-md-2">
-    <a href="dashboard.php">Back</a>
+    <a href="dashboard.php">Main Menu</a>
     <a href="logout.php" style="color:red;margin-left:5px">Logout</a>
 </div>
 </div>
@@ -31,7 +31,7 @@
 
             <br>
 
-            <a href="">
+            <a href="deleteterminalreports.php">
             <div class="row">
                 <p>Terminal Delete Reports</p>
             </div>
@@ -47,7 +47,7 @@
 
             <br>
 
-            <a href="">
+            <a href="cupreports.php">
             <div class="row">
                 <p>Cup Reports</p>
             </div>

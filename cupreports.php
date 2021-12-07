@@ -6,19 +6,20 @@ if (!isset($_SESSION['username'])) {
 include("header.php");
 ?>
 
+
 <body class="daily dashboard">
     <div class="container-fluid">
         <div class="row" style="margin-top:50px">
-        <div class="col-md-10">
-            <p style="color:blanchedalmond"><i class="fas fa-user" style="margin-right:5px;"></i><?php echo $_SESSION['username'] ?></p>
-        </div>
+            <div class="col-md-10">
+                <p style="color:blanchedalmond"><i class="fas fa-user" style="margin-right:5px;"></i><?php echo $_SESSION['username'] ?></p>
+            </div>
             <div class="col-md-2">
                 <a href="viewreports.php">Back</a>
                 <a href="logout.php" style="color:red;margin-left:5px">Logout</a>
             </div>
         </div>
         <div class="row">
-            <h1 class="heading" style="text-align:center;text-shadow: 0 0 3px #FF0, 0 0 5px #0000FF;"> Daily Terminal Count <span style="color:whitesmoke"> Reports</span> </h1>
+            <h1 class="heading" style="text-align:center;text-shadow: 0 0 3px #FF0, 0 0 5px #0000FF;">  Terminal Delete <span style="color:whitesmoke"> Reports</span> </h1>
         </div>
         <form action="" method="post" enctype="multipart/form-data" autocomplete="off">
             <div class="row">
@@ -47,7 +48,7 @@ include("header.php");
                 $fromDate = $_POST['fromDate'];
                 $toDate = $_POST['toDate'];
 
-                $sql = mysqli_query($conn, "select * from terminal where date between '{$fromDate}' and '{$toDate}' and status=0 ");
+                $sql = mysqli_query($conn, "select * from terminal where date between '{$fromDate}' and '{$toDate}' and status=0 and cup='yes'");
 
                 if (mysqli_num_rows($sql) < 1) {
                     $error = "Nothing data";
@@ -152,19 +153,5 @@ include("header.php");
                 XLSX.writeFile(wb, fn || (d + '.' + (type || 'xlsx')));
         }
     </script>
-
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="paging.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#tableData').paging({
-                limit: 6
-            });
-        });
-    </script>
-
 </body>
-
 </html>
