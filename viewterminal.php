@@ -61,7 +61,7 @@
                             while($row=mysqli_fetch_assoc($sql)){
                                 ?>
 
-                                <div class="row" style="margin-top:25px">
+                                <div class="row" style="margin-top:25px;background-color: hsla(120, 60%, 70%, 0.3);">
                                     <div class="col-md-6">
                                         <div class="row">
                                             <div class="col-md-5" style="font-weight:bold;">Terminal ID</div>

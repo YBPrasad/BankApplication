@@ -55,7 +55,7 @@ include("header.php");
                 } else {
                 ?>
 
-                    <table class="table" style="margin-top:20px" id="tableData">
+                    <table class="table table-dark" style="margin-top:20px" id="tableData">
                         <thead style="color:blue">
                             <tr>
                                 <th>Terminal Id</th>

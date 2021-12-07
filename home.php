@@ -14,7 +14,7 @@ include("header.php");
         <div class="row">
 
             <div class="col-md-10">
-                <p style="color:blanchedalmond"><i class="fas fa-user" style="margin-right:5px;"></i><?php echo $_SESSION['username'] ?></p>
+                <p style="color:whitesmoke"><i class="fas fa-user" style="margin-right:5px;"></i><?php echo $_SESSION['username'] ?></p>
             </div>
 
             <div class="col-md-2">
